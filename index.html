@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的第一個網頁</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個網頁 - 自我介紹</title>
 </head>
 <body>
-  <h1>你好，這是我的第一個網頁</h1>
-  <p>我是淡江大學的學生，正在學習網頁程式設計。</p>
+
+    <!-- 1. header 區塊 -->
+    <header>
+        <!-- 頁面主標題 h1 -->
+        <h1>你好，這是我的第一個網頁</h1>
+    </header>
+
+    <!-- 2. nav 區塊（本機頁面連結） -->
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我</a>
+    </nav>
+
+    <!-- 3. main 主內容區塊 -->
+    <main>
+        <!-- 4. section 自我介紹區塊 -->
+        <section>
+            <h2>關於我</h2>
+            <!-- 一段自我介紹 p -->
+            <p>我是淡江大學的學生，正在學習網頁前端開發。</p>
+            
+            <!-- 有正確 alt 的圖片 -->
+            <img src="images/profile.jpg" alt="喜歡的偶像照片" width="200">
+        </section>
+
+        <!-- 興趣或技能清單 -->
+        <section>
+            <h2>我的興趣與技能</h2>
+            <ul>
+                <li>玩電腦遊戲</li>
+                <li>籃球運動</li>
+                <li>音樂與閱讀</li>
+            </ul>
+        </section>
+
+        <!-- 至少三列資料的表格 -->
+        <section>
+            <h2>學習歷程</h2>
+            <table>
+                <caption>本學期學習內容</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">週次</th>
+                        <th scope="col">主題</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Week 1</td>
+                        <td>GitHub 開發環境設定</td>
+                    </tr>
+                    <tr>
+                        <td>Week 2</td>
+                        <td>Git 基礎與版本控制</td>
+                    </tr>
+                    <tr>
+                        <td>Week 3</td>
+                        <td>HTML 網頁基礎與語意化標籤</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 外部連結 -->
+        <section>
+            <h2>相關連結</h2>
+            <p>歡迎造訪 <a href="https://www.tku.edu.tw/" target="_blank" rel="noreferrer">淡江大學官網</a>。</p>
+        </section>
+    </main>
+
+    <!-- 5. footer 區塊 -->
+    <footer>
+        <p>&copy; 2026 簡胥恩. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
